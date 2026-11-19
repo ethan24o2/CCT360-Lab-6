@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loop &amp; Path — Neighborhood Walk &amp; Park Loop Directory</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-1 py-3 border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Loop &amp; Path</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Loops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featured-carousel">Highlights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#walk-directory">Directory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Submit a Walk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-4">
+      <div class="container">
+        <h1 class="display-6 fw-bold mb-2">Neighborhood Walk &amp; Park Loop Directory</h1>
+        <p class="lead mb-0">Explore local park circuits, shaded trails, and waterside loops for daily walks and cognitive resets.</p>
+      </div>
+    </section>
+
+    <section id="featured-carousel" class="pb-5">
+      <div class="container">
+        <div id="walkCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#walkCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#walkCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#walkCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="images/slide-creek.jpg" class="d-block w-100" alt="Stone walkway along calm blue water with a railing, overhanging leaves, and green trees on the right." />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                <h2 class="h5 mb-1">Morning Creekside Loops</h2>
+                <p class="mb-0">Calm waterfront paths with open views and steady footing for early morning walks.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide-woods.jpg" class="d-block w-100" alt="Curved paved park path winding between tall trees and autumn leaves." />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                <h2 class="h5 mb-1">Shaded Woodland Trails</h2>
+                <p class="mb-0">Tree-lined park paths offering dappled shade and seasonal foliage.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide-sunset.jpg" class="d-block w-100" alt="Red-surfaced park pathway curving beside a green lawn and trees under warm sunset clouds." />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-2">
+                <h2 class="h5 mb-1">Golden Hour Park Circuits</h2>
+                <p class="mb-0">Late-afternoon park loops bordered by open grass and warm sky tones.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#walkCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#walkCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="walk-directory" class="pb-5">
+      <div class="container">
+        <h2 class="h3 fw-bold mb-4">Featured Park Loops</h2>
+        <div class="row g-4">
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100">
+              <img src="images/loop-creek.jpg" class="card-img-top" alt="Wooden footbridge over calm green water framed by overhanging branches and purple-flowered plants." />
+              <div class="card-body">
+                <h3 class="h5 card-title">Creekside Morning Loop</h3>
+                <p class="card-text">A peaceful 2.4 km waterside route crossing a timber footbridge surrounded by greenery and waterside blooms.</p>
+                <details class="mb-3">
+                  <summary>Route details</summary>
+                  <p class="mt-2 mb-0 small">Distance: 2.4 km loop &bull; Surface: Timber bridge and packed path &bull; Best time: Early morning.</p>
+                </details>
+                <button type="button" class="btn btn-solid theme-primary" onclick="document.getElementById('dialog-loop-1').showModal()">Route Tip</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100">
+              <img src="images/loop-ravine.jpg" class="card-img-top" alt="Rocky forest trail winding through thick green moss and tall evergreen trees." />
+              <div class="card-body">
+                <h3 class="h5 card-title">Cedar Ravine Canopy Walk</h3>
+                <p class="card-text">A quiet 3.1 km wooded loop through mossy terrain, uneven stones, and tall evergreen trees.</p>
+                <details class="mb-3">
+                  <summary>Route details</summary>
+                  <p class="mt-2 mb-0 small">Distance: 3.1 km loop &bull; Surface: Natural earth, roots, and rock &bull; Best time: Midday shade.</p>
+                </details>
+                <button type="button" class="btn btn-solid theme-primary" onclick="document.getElementById('dialog-loop-2').showModal()">Route Tip</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100">
+              <img src="images/loop-meadow.jpg" class="card-img-top" alt="Stepping-stone path curving across a bright green park lawn with low lights and leafy trees." />
+              <div class="card-body">
+                <h3 class="h5 card-title">South Meadow Circuit</h3>
+                <p class="card-text">An open 1.8 km grass-and-stone circuit with wide sky views, low path lights, and mature shade trees.</p>
+                <details class="mb-3">
+                  <summary>Route details</summary>
+                  <p class="mt-2 mb-0 small">Distance: 1.8 km circuit &bull; Surface: Stepping stones and lawn &bull; Best time: Clear sunny afternoons.</p>
+                </details>
+                <button type="button" class="btn btn-solid theme-primary" onclick="document.getElementById('dialog-loop-3').showModal()">Route Tip</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100">
+              <img src="images/loop-ridge.jpg" class="card-img-top" alt="Elevated curving wooden walkway winding through lush green treetops above mossy rocks." />
+              <div class="card-body">
+                <h3 class="h5 card-title">West Ridge Overlook</h3>
+                <p class="card-text">A scenic 2.7 km elevated walkway winding among tree crowns with views over mossy rock formations below.</p>
+                <details class="mb-3">
+                  <summary>Route details</summary>
+                  <p class="mt-2 mb-0 small">Distance: 2.7 km loop &bull; Surface: Elevated timber walkway &bull; Best time: Late afternoon.</p>
+                </details>
+                <button type="button" class="btn btn-solid theme-primary" onclick="document.getElementById('dialog-loop-4').showModal()">Route Tip</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100">
+              <img src="images/loop-pond.jpg" class="card-img-top" alt="Curving wooden boardwalk extending across a calm pond with trees and shrubs along the shore." />
+              <div class="card-body">
+                <h3 class="h5 card-title">Willow Pond Boardwalk</h3>
+                <p class="card-text">A relaxed 2.0 km waterside stroll featuring a sweeping wooden boardwalk over calm pond water and shoreline shrubs.</p>
+                <details class="mb-3">
+                  <summary>Route details</summary>
+                  <p class="mt-2 mb-0 small">Distance: 2.0 km loop &bull; Surface: Wooden boardwalk &bull; Best time: Morning or dusk.</p>
+                </details>
+                <button type="button" class="btn btn-solid theme-primary" onclick="document.getElementById('dialog-loop-5').showModal()">Route Tip</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100">
+              <img src="images/loop-garden.jpg" class="card-img-top" alt="Brick-paved park path bordered by low shrubs, benches, and tall leafy shade trees." />
+              <div class="card-body">
+                <h3 class="h5 card-title">Heritage Orchard &amp; Garden Path</h3>
+                <p class="card-text">A calm 1.5 km brick-lined neighborhood walk with park benches, trimmed shrubs, and dense overhead foliage.</p>
+                <details class="mb-3">
+                  <summary>Route details</summary>
+                  <p class="mt-2 mb-0 small">Distance: 1.5 km loop &bull; Surface: Brick walkway &bull; Best time: Short study or work breaks.</p>
+                </details>
+                <button type="button" class="btn btn-solid theme-primary" onclick="document.getElementById('dialog-loop-6').showModal()">Route Tip</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog id="dialog-loop-1" class="p-4 rounded border">
+      <h2 class="h5 fw-bold">Creekside Morning Loop Tip</h2>
+      <p>Arrive early for quiet water reflections and shaded bridge crossings before weekend foot traffic picks up. Press Escape or click Close to exit.</p>
+      <form method="dialog">
+        <button type="submit" class="btn btn-solid theme-primary">Close</button>
+      </form>
+    </dialog>
+
+    <dialog id="dialog-loop-2" class="p-4 rounded border">
+      <h2 class="h5 fw-bold">Cedar Ravine Canopy Walk Tip</h2>
+      <p>Wear sturdy, grip-friendly shoes because mossy rocks and exposed roots stay damp beneath the forest canopy after rain.</p>
+      <form method="dialog">
+        <button type="submit" class="btn btn-solid theme-primary">Close</button>
+      </form>
+    </dialog>
+
+    <dialog id="dialog-loop-3" class="p-4 rounded border">
+      <h2 class="h5 fw-bold">South Meadow Circuit Tip</h2>
+      <p>Bring sunglasses and a hat on bright days since this open meadow circuit has fewer overhead trees than the ravine trail.</p>
+      <form method="dialog">
+        <button type="submit" class="btn btn-solid theme-primary">Close</button>
+      </form>
+    </dialog>
+
+    <dialog id="dialog-loop-4" class="p-4 rounded border">
+      <h2 class="h5 fw-bold">West Ridge Overlook Tip</h2>
+      <p>Pause along the curved railing sections to take in the canopy view and let your eyes rest on distant greenery.</p>
+      <form method="dialog">
+        <button type="submit" class="btn btn-solid theme-primary">Close</button>
+      </form>
+    </dialog>
+
+    <dialog id="dialog-loop-5" class="p-4 rounded border">
+      <h2 class="h5 fw-bold">Willow Pond Boardwalk Tip</h2>
+      <p>Watch for dew on wooden planks early in the morning and enjoy the calm reflections along the curved pond edge.</p>
+      <form method="dialog">
+        <button type="submit" class="btn btn-solid theme-primary">Close</button>
+      </form>
+    </dialog>
+
+    <dialog id="dialog-loop-6" class="p-4 rounded border">
+      <h2 class="h5 fw-bold">Heritage Orchard &amp; Garden Path Tip</h2>
+      <p>Ideal for a brisk 15-to-20-minute break with benches spaced along the brick path whenever you want a quick pause.</p>
+      <form method="dialog">
+        <button type="submit" class="btn btn-solid theme-primary">Close</button>
+      </form>
+    </dialog>
+  </main>
+
+  <footer class="bg-1 py-4 border-top">
+    <div class="container">
+      <p class="mb-0">Loop &amp; Path Directory &bull; Neighborhood Walk &amp; Park Loop Guide</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+  background-color: #241914;
+  color: #f7efe6;
+}
+
+h1, h2, h3, .navbar-brand, .nav-link {
+  color: #f7efe6;
+}
+
+.bg-1, .navbar, footer {
+  background-color: #3a271e;
+  color: #f7efe6;
+}
+
+.card {
+  background-color: #4a3328;
+  color: #f7efe6;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.carousel-item img {
+  height: auto;
+}
